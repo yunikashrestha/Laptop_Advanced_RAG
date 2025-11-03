@@ -8,9 +8,10 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from fastembed import TextEmbedding, SparseTextEmbedding, LateInteractionTextEmbedding
 from typing import List, Dict
+import streamlit as st
 
 
-COLLECTION_NAME = "jpt"
+COLLECTION_NAME = "Laptops_mudita"
 CLIENT = QdrantClient(url="http://localhost:6333")
 DENSE_ENCODER = TextEmbedding("sentence-transformers/all-MiniLM-L6-v2")
 SPARSE_ENCODER = SparseTextEmbedding("Qdrant/bm25")
@@ -153,9 +154,12 @@ def deep_thinking_retrieval(query_list):
 
 # --- MAIN CHAT FUNCTION ---
 
+# --- MAIN CHAT FUNCTION (Modified) ---
+
 def chat(prompt: str):
     """
     The main function orchestrating the chat and tool-calling logic.
+    (MODIFIED to explicitly RETURN the final_answer string.)
     """
     
     load_dotenv()
@@ -179,6 +183,7 @@ def chat(prompt: str):
     3. Finally, use the retrieved documents to answer all the queries such as price comparision, specification comparision, X VS Y Laptop Brands where X is the laptop searched by the user, Use cases(Gaming, Light Weight use-case)
     4. Include all the possible answers analysing the retrieved docs and the all the queries generated.
     5. Give a detailed answer that covers all the concerns of the user without him/her having to explain much in their query.
+    6. Provide the details of products and comparison in table and also include the url of the product from the retrieved documents.
 
     User Query: "{prompt}"
     """
@@ -189,12 +194,14 @@ def chat(prompt: str):
     try:
         function_call = response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "query_generation":
-            raise ValueError("Model did not call the expected first function: query_generation")
-        print(f"\n[AI] Decided to call Tool 1:{function_call.name}")
-    except (IndexError, AttributeError, ValueError):
-        print("\n[AI] : The model didn't call a function and responded with text instead:")
-        print(response.text)
-        return
+            # If function call fails, return the model's text response (or an error message)
+            return response.text 
+            
+    except (IndexError, AttributeError, ValueError) as e:
+        print("\n[AI] : The model didn't call a function and responded with text instead or an error occurred.")
+        # Return the error or the unexpected text
+        return f"Tool 1 Error or unexpected model response: {response.text or str(e)}"
+
 
     # Execute Tool 1
     args = function_call.args    
@@ -213,15 +220,14 @@ def chat(prompt: str):
     try:
         function_call = response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "deep_thinking_retrieval":
-            raise ValueError("Model did not call the expected second function: deep_thinking_retrieval")
-        print(f"\n[AI] Decided to call Tool 2:{function_call.name}")
-    except (IndexError, AttributeError, ValueError):
-        print("\n[AI] : The model didn't call a function and responded with text instead:")
-        print(response.text)
-        return
+             # If function call fails, return the model's text response (or an error message)
+            return response.text
+    except (IndexError, AttributeError, ValueError) as e:
+        print("\n[AI] : The model didn't call a function and responded with text instead or an error occurred.")
+        return f"Tool 2 Error or unexpected model response: {response.text or str(e)}"
+
 
     # Execute Tool 2
-    # The original logic uses the generated sub_queries list, ignoring the model's suggested args for this call
     tool_two_response_content = deep_thinking_retrieval(query_list=sub_queries)
     docs_dict = json.loads(tool_two_response_content)
 
@@ -233,11 +239,61 @@ def chat(prompt: str):
     
     # --- STEP 3: Final Answer Generation ---
     final_answer = response.candidates[0].content.parts[0].text
-    print("\n--- FINAL ASSISTANT RESPONSE ---")
-    print(final_answer)
+    
+    # --- THE CRITICAL FIX ---
+    # Instead of just printing, we must RETURN the final result to Streamlit
+    return final_answer
 
-# --- Execution Block ---
+# # --- Execution Block ---
+
+# if __name__ == '__main__':
+#     user_prompt = input("Enter the query you want to search: ")
+#     chat(user_prompt)
+
+def rag_ui():
+    """Sets up the Streamlit interface and orchestrates the RAG run."""
+    st.set_page_config(
+        page_title="Deep Thinking RAG System",
+        layout="wide",
+        initial_sidebar_state="collapsed"
+    )
+
+    st.title("Deep Thinking RAG System for Laptop Comparison")
+    st.markdown("Enter your query to start the multi-step, tool-augmented analysis.")
+    st.markdown("---")
+
+    # 1. User Input Area
+    user_prompt = st.text_input(
+        "**Enter Your Laptop Query:**",
+        placeholder="e.g., Compare the latest Dell XPS 13 with the HP Spectre x360 on price and battery life.",
+        key="user_query"
+    )
+
+    # 2. Submit Button
+    if st.button("**Start Deep Analysis**", type="primary"):
+        if not user_prompt:
+            st.error("Please enter a query to analyze.")
+            return
+
+        st.subheader("Comprehensive Analysis Result")
+        
+        # Use st.spinner to indicate ongoing work
+        with st.spinner("Running RAG pipeline: Query Generation, Retrieval, and Synthesis... (Check console for debug logs)"):
+            try:
+                # Call the original 'chat' function which contains all your logic
+                final_answer = chat(user_prompt)
+                
+                # Display the result
+                st.markdown(final_answer)
+                
+            except ValueError as e:
+                # Catch API key error specifically
+                st.error(f"Configuration Error: {e}")
+            except Exception as e:
+                # Catch all other errors (Qdrant connection, network, etc.)
+                st.error(f"An unexpected error occurred during the RAG process. Please check Qdrant connection, FastEmbed models, or API settings. Error: {e}")
+
 
 if __name__ == '__main__':
-    user_prompt = "Acer Laptop"
-    chat(user_prompt)
+    # We call the Streamlit UI function, which in turn calls your chat function
+    rag_ui()
