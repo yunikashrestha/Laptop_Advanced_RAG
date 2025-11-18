@@ -4,7 +4,6 @@ import re
 import json
 import os
 from dotenv import load_dotenv
-# from google import genai
 import google.generativeai as genai
 from fastembed import TextEmbedding, SparseTextEmbedding, LateInteractionTextEmbedding
 from typing import List, Dict
@@ -38,7 +37,7 @@ def _get_product_indices(query: str) -> List[str]:
         )
     ]
 
-    # Final query using Late Interaction model for re-ranking
+
     query_results = CLIENT.query_points(
         collection_name=COLLECTION_NAME,
         prefetch=prefetch,
@@ -49,7 +48,6 @@ def _get_product_indices(query: str) -> List[str]:
         with_vectors=False
     ).points
 
-    # Extract and return the product IDs
     product_ids = []
     for result in query_results:
         product_id = result.payload.get("product_id") if result.payload else None
@@ -68,7 +66,6 @@ def retrieve_relevant_documents(query: str) -> List[List[str]]:
     all_chunks = []
     
     for product_id in retrieved_products:
-        # Filter to get all chunks associated with a single product ID
         product_filter =models.Filter(
             must=[
                 models.FieldCondition(
@@ -81,7 +78,7 @@ def retrieve_relevant_documents(query: str) -> List[List[str]]:
         info, _ = CLIENT.scroll(
             collection_name=COLLECTION_NAME,
             scroll_filter=product_filter,
-            limit=30,  # Limit per product
+            limit=30,
             with_payload=True,
             with_vectors=False
         )
@@ -97,8 +94,6 @@ def retrieve_relevant_documents(query: str) -> List[List[str]]:
 
     print(f"Total product document sets retrieved: {len(all_chunks)}")
     return all_chunks
-
-# --- GEMINI TOOL FUNCTIONS ---
 
 def query_generation(base_query: str) -> Dict[str, List[str]]:
     """
@@ -152,10 +147,6 @@ def deep_thinking_retrieval(query_list):
     print(f"\n[DEBUG: Tool 2] Documents retrieved for {len(query_list)} queries.")
     return final_documents_json
 
-# --- MAIN CHAT FUNCTION ---
-
-# --- MAIN CHAT FUNCTION (Modified) ---
-
 def chat(prompt: str):
     """
     The main function orchestrating the chat and tool-calling logic.
@@ -188,67 +179,53 @@ def chat(prompt: str):
     User Query: "{prompt}"
     """
     
-    # --- STEP 1: Call query_generation ---
     response = chat_session.send_message(initial_prompt)
 
     try:
         function_call = response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "query_generation":
-            # If function call fails, return the model's text response (or an error message)
             return response.text 
             
     except (IndexError, AttributeError, ValueError) as e:
         print("\n[AI] : The model didn't call a function and responded with text instead or an error occurred.")
-        # Return the error or the unexpected text
         return f"Tool 1 Error or unexpected model response: {response.text or str(e)}"
 
 
-    # Execute Tool 1
     args = function_call.args    
     tool_one_response_content = query_generation(base_query=args.get('base_query', prompt))
     sub_queries = tool_one_response_content.get("query_list", [])
 
-    # Send Tool 1 result back to the model
     response = chat_session.send_message({
     "function_response": {
         "name": "query_generation",
         "response": {"query_list": sub_queries}
     }
     })
-
-    # --- STEP 2: Call deep_thinking_retrieval ---
     try:
         function_call = response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "deep_thinking_retrieval":
-             # If function call fails, return the model's text response (or an error message)
             return response.text
     except (IndexError, AttributeError, ValueError) as e:
         print("\n[AI] : The model didn't call a function and responded with text instead or an error occurred.")
         return f"Tool 2 Error or unexpected model response: {response.text or str(e)}"
 
 
-    # Execute Tool 2
+  
     tool_two_response_content = deep_thinking_retrieval(query_list=sub_queries)
     docs_dict = json.loads(tool_two_response_content)
 
-    # Send Tool 2 result back to the model
+   
     response = chat_session.send_message({"function_response":{
         "name":"deep_thinking_retrieval",
         "response": {"documents": docs_dict}
     }})
     
-    # --- STEP 3: Final Answer Generation ---
+ 
     final_answer = response.candidates[0].content.parts[0].text
     
-    # --- THE CRITICAL FIX ---
-    # Instead of just printing, we must RETURN the final result to Streamlit
+  
     return final_answer
 
-# # --- Execution Block ---
-
-# if __name__ == '__main__':
-#     user_prompt = input("Enter the query you want to search: ")
-#     chat(user_prompt)
 
 def rag_ui():
     """Sets up the Streamlit interface and orchestrates the RAG run."""
@@ -262,14 +239,14 @@ def rag_ui():
     st.markdown("Enter your query to start the multi-step, tool-augmented analysis.")
     st.markdown("---")
 
-    # 1. User Input Area
+# 1. User Input Area
     user_prompt = st.text_input(
         "**Enter Your Laptop Query:**",
         placeholder="e.g., Compare the latest Dell XPS 13 with the HP Spectre x360 on price and battery life.",
         key="user_query"
     )
 
-    # 2. Submit Button
+    
     if st.button("**Start Deep Analysis**", type="primary"):
         if not user_prompt:
             st.error("Please enter a query to analyze.")
@@ -277,23 +254,17 @@ def rag_ui():
 
         st.subheader("Comprehensive Analysis Result")
         
-        # Use st.spinner to indicate ongoing work
         with st.spinner("Running RAG pipeline: Query Generation, Retrieval, and Synthesis... (Check console for debug logs)"):
             try:
-                # Call the original 'chat' function which contains all your logic
                 final_answer = chat(user_prompt)
                 
-                # Display the result
                 st.markdown(final_answer)
                 
             except ValueError as e:
-                # Catch API key error specifically
                 st.error(f"Configuration Error: {e}")
             except Exception as e:
-                # Catch all other errors (Qdrant connection, network, etc.)
                 st.error(f"An unexpected error occurred during the RAG process. Please check Qdrant connection, FastEmbed models, or API settings. Error: {e}")
 
 
 if __name__ == '__main__':
-    # We call the Streamlit UI function, which in turn calls your chat function
     rag_ui()
