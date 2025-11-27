@@ -202,7 +202,7 @@ def chat(prompt: str):
     }
     })
     try:
-        function_call = response.candidates[0].content.parts[0].function_call
+        response += response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "deep_thinking_retrieval":
             return response.text
     except (IndexError, AttributeError, ValueError) as e:
@@ -239,7 +239,6 @@ def rag_ui():
     st.markdown("Enter your query to start the multi-step, tool-augmented analysis.")
     st.markdown("---")
 
-# 1. User Input Area
     user_prompt = st.text_input(
         "**Enter Your Laptop Query:**",
         placeholder="e.g., Compare the latest Dell XPS 13 with the HP Spectre x360 on price and battery life.",
