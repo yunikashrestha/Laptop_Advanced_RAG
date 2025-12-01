@@ -1,0 +1,504 @@
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.8347 seconds 
+Average Time Required: 0.0833935136364413 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.7087 seconds 
+Average Time Required: 0.0776667454549831 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.5577 seconds 
+Average Time Required: 0.07080624090899205 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.5110 seconds 
+Average Time Required: 0.06868135908999565 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.5323 seconds 
+Average Time Required: 0.06964852727304044 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.4298 seconds 
+Average Time Required: 0.06498972727223934 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.5240 seconds 
+Average Time Required: 0.06927131818189412 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_f_type_60-degree_clamping.xlsx 
+Total Points Inserted: 14
+Total time required:0.9162 seconds 
+Average Time Required: 0.06544169285708838 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_f_type_60-degree_clamping.xlsx 
+Total Points Inserted: 14
+Total time required:0.9301 seconds 
+Average Time Required: 0.066438678573052 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.4251 seconds 
+Average Time Required: 0.06477901818156666 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_f_type_60-degree_clamping.xlsx 
+Total Points Inserted: 14
+Total time required:0.9132 seconds 
+Average Time Required: 0.06522892857070214 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_hexagon.xlsx 
+Total Points Inserted: 79
+Total time required:8.2797 seconds 
+Average Time Required: 0.1048063316453938 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_r_type.xlsx 
+Total Points Inserted: 17
+Total time required:1.2200 seconds 
+Average Time Required: 0.0717664352936588 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_square.xlsx 
+Total Points Inserted: 78
+Total time required:7.6761 seconds 
+Average Time Required: 0.09841185897470822 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_nuts_toothed_lock_washers_for_bearings.xlsx 
+Total Points Inserted: 44
+Total time required:3.9047 seconds 
+Average Time Required: 0.08874368863590379 
+
+ 
+File Inserted :Bearing_lock_nuts_eccentric_bearing_lock_nuts.xlsx 
+Total Points Inserted: 22
+Total time required:1.7696 seconds 
+Average Time Required: 0.08043479090900457 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nut_sc_series_material_s45c_conditioning_quality_equivalent_.xlsx 
+Total Points Inserted: 19
+Total time required:1.6093 seconds 
+Average Time Required: 0.08470133684214058 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nut_sus_series_material_sus304_.xlsx 
+Total Points Inserted: 18
+Total time required:1.2757 seconds 
+Average Time Required: 0.07087261666634327 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nuts.xlsx 
+Total Points Inserted: 34
+Total time required:3.1059 seconds 
+Average Time Required: 0.0913504676470492 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u-nut_ss_series_material_ss400_equivalent_.xlsx 
+Total Points Inserted: 15
+Total time required:1.0577 seconds 
+Average Time Required: 0.07051343333247738 
+
+ 
+File Inserted :Bearing_lock_nuts_hard_lock_bearing_nut_hlb_.xlsx 
+Total Points Inserted: 31
+Total time required:2.6006 seconds 
+Average Time Required: 0.08388972258093887 
+
+ 
+File Inserted :Bearing_lock_nuts_hard_lock_nut.xlsx 
+Total Points Inserted: 48
+Total time required:4.5389 seconds 
+Average Time Required: 0.09456080624962244 
+
+ 
+File Inserted :Bearing_lock_nuts_hlb.xlsx 
+Total Points Inserted: 1
+Total time required:0.0766 seconds 
+Average Time Required: 0.07656869999482296 
+
+ 
+File Inserted :Bearing_lock_nuts_hook_spanners_for_bearing_nuts.xlsx 
+Total Points Inserted: 10
+Total time required:0.6754 seconds 
+Average Time Required: 0.06754045999841765 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_hb_type.xlsx 
+Total Points Inserted: 3
+Total time required:0.2135 seconds 
+Average Time Required: 0.07115906667119513 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_sln_type.xlsx 
+Total Points Inserted: 13
+Total time required:1.0421 seconds 
+Average Time Required: 0.08016383076811998 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_swln_type.xlsx 
+Total Points Inserted: 7
+Total time required:0.5316 seconds 
+Average Time Required: 0.07594345714148533 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_yhb_type.xlsx 
+Total Points Inserted: 5
+Total time required:0.3411 seconds 
+Average Time Required: 0.06822752000298352 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_yzm_type.xlsx 
+Total Points Inserted: 18
+Total time required:1.2759 seconds 
+Average Time Required: 0.07088453888880192 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_zm_type.xlsx 
+Total Points Inserted: 24
+Total time required:1.5564 seconds 
+Average Time Required: 0.06485086250055853 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_zmv_type.xlsx 
+Total Points Inserted: 18
+Total time required:1.2014 seconds 
+Average Time Required: 0.06674565000058566 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut.xlsx 
+Total Points Inserted: 12
+Total time required:0.6197 seconds 
+Average Time Required: 0.05164567499984211 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nuts_an.xlsx 
+Total Points Inserted: 34
+Total time required:2.2094 seconds 
+Average Time Required: 0.0649820117644541 
+
+ 
+File Inserted :Bearing_lock_nuts_loosening_prevention_nuts_for_bearing.xlsx 
+Total Points Inserted: 30
+Total time required:2.5203 seconds 
+Average Time Required: 0.08400853666729138 
+
+ 
+File Inserted :Bearing_lock_nuts_precision_bearing_lock_nuts_compact.xlsx 
+Total Points Inserted: 24
+Total time required:1.6982 seconds 
+Average Time Required: 0.07075800416714628 
+
+ 
+File Inserted :Bearing_lock_nuts_precision_lock_nuts_standard_high-grade.xlsx 
+Total Points Inserted: 28
+Total time required:2.1017 seconds 
+Average Time Required: 0.07505969642807031 
+
+ 
+File Inserted :Bearing_lock_nuts_ratchet_handle_for_fine_u_nut.xlsx 
+Total Points Inserted: 2
+Total time required:0.1212 seconds 
+Average Time Required: 0.06060615000023972 
+
+ 
+File Inserted :Bearing_lock_nuts_roller_bearing_nut_shaft_nut_an_series.xlsx 
+Total Points Inserted: 46
+Total time required:3.0726 seconds 
+Average Time Required: 0.06679544565217245 
+
+ 
+File Inserted :Bearing_lock_nuts_roller_bearing_retaining_washer_and_clasp_al_clasp_series.xlsx 
+Total Points Inserted: 5
+Total time required:0.4213 seconds 
+Average Time Required: 0.08426574000041001 
+
+ 
+File Inserted :Bearing_lock_nuts_rolling_bearing_retaining_nut_hn_series.xlsx 
+Total Points Inserted: 3
+Total time required:0.2300 seconds 
+Average Time Required: 0.07665789999494639 
+
+ 
+File Inserted :Bearing_lock_nuts_socket_for_fine_u_nut.xlsx 
+Total Points Inserted: 7
+Total time required:0.4968 seconds 
+Average Time Required: 0.0709665285706121 
+
+ 
+File Inserted :Bearing_lock_nuts_super_bearing_nut.xlsx 
+Total Points Inserted: 19
+Total time required:1.2303 seconds 
+Average Time Required: 0.06475503684180837 
+
+ 
+File Inserted :Bearing_lock_nuts_twin_fu_nut.xlsx 
+Total Points Inserted: 9
+Total time required:0.6456 seconds 
+Average Time Required: 0.07172863333188514 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_aw.xlsx 
+Total Points Inserted: 23
+Total time required:1.6291 seconds 
+Average Time Required: 0.07082850869577985 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_for_rolling_bearing_retaining_and_tightening_washer_series_aw.xlsx 
+Total Points Inserted: 1
+Total time required:0.0831 seconds 
+Average Time Required: 0.0831109999853652 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_for_rolling_bearings_retaining_and_tightening_washer_series_awl.xlsx 
+Total Points Inserted: 9
+Total time required:0.7559 seconds 
+Average Time Required: 0.08398801110969442 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.8417 seconds 
+Average Time Required: 0.08371527727153576 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_f_type_60-degree_clamping.xlsx 
+Total Points Inserted: 14
+Total time required:0.9835 seconds 
+Average Time Required: 0.0702529642855682 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_an_type.xlsx 
+Total Points Inserted: 22
+Total time required:1.5663 seconds 
+Average Time Required: 0.07119344545538876 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_hexagon.xlsx 
+Total Points Inserted: 79
+Total time required:8.2225 seconds 
+Average Time Required: 0.10408238227821037 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_r_type.xlsx 
+Total Points Inserted: 17
+Total time required:1.1223 seconds 
+Average Time Required: 0.0660147823544 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_lock_nuts_square.xlsx 
+Total Points Inserted: 78
+Total time required:7.9251 seconds 
+Average Time Required: 0.10160444230766585 
+
+ 
+File Inserted :Bearing_lock_nuts_bearing_nuts_toothed_lock_washers_for_bearings.xlsx 
+Total Points Inserted: 44
+Total time required:4.4210 seconds 
+Average Time Required: 0.10047768409078178 
+
+ 
+File Inserted :Bearing_lock_nuts_eccentric_bearing_lock_nuts.xlsx 
+Total Points Inserted: 22
+Total time required:1.5098 seconds 
+Average Time Required: 0.06862832727281122 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nut_sc_series_material_s45c_conditioning_quality_equivalent_.xlsx 
+Total Points Inserted: 19
+Total time required:1.5017 seconds 
+Average Time Required: 0.07903890526167263 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nut_sus_series_material_sus304_.xlsx 
+Total Points Inserted: 18
+Total time required:1.3473 seconds 
+Average Time Required: 0.07485078333411366 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u_nuts.xlsx 
+Total Points Inserted: 34
+Total time required:3.0929 seconds 
+Average Time Required: 0.09096896470702417 
+
+ 
+File Inserted :Bearing_lock_nuts_fine_u-nut_ss_series_material_ss400_equivalent_.xlsx 
+Total Points Inserted: 15
+Total time required:0.9740 seconds 
+Average Time Required: 0.06493050000087047 
+
+ 
+File Inserted :Bearing_lock_nuts_hard_lock_bearing_nut_hlb_.xlsx 
+Total Points Inserted: 31
+Total time required:2.8739 seconds 
+Average Time Required: 0.09270587741893026 
+
+ 
+File Inserted :Bearing_lock_nuts_hard_lock_nut.xlsx 
+Total Points Inserted: 48
+Total time required:4.4963 seconds 
+Average Time Required: 0.0936737666670524 
+
+ 
+File Inserted :Bearing_lock_nuts_hlb.xlsx 
+Total Points Inserted: 1
+Total time required:0.0826 seconds 
+Average Time Required: 0.0825856999726966 
+
+ 
+File Inserted :Bearing_lock_nuts_hook_spanners_for_bearing_nuts.xlsx 
+Total Points Inserted: 10
+Total time required:0.7964 seconds 
+Average Time Required: 0.07964220000430941 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_hb_type.xlsx 
+Total Points Inserted: 3
+Total time required:0.2323 seconds 
+Average Time Required: 0.07741976665177693 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_sln_type.xlsx 
+Total Points Inserted: 13
+Total time required:0.9249 seconds 
+Average Time Required: 0.07114733076797655 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_swln_type.xlsx 
+Total Points Inserted: 7
+Total time required:0.4576 seconds 
+Average Time Required: 0.06537401428379651 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_yhb_type.xlsx 
+Total Points Inserted: 5
+Total time required:0.3446 seconds 
+Average Time Required: 0.06891934000886976 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_yzm_type.xlsx 
+Total Points Inserted: 18
+Total time required:1.1927 seconds 
+Average Time Required: 0.06626137222176315 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_zm_type.xlsx 
+Total Points Inserted: 24
+Total time required:1.6205 seconds 
+Average Time Required: 0.06752199166658102 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut_zmv_type.xlsx 
+Total Points Inserted: 18
+Total time required:1.2354 seconds 
+Average Time Required: 0.06863511666435645 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nut.xlsx 
+Total Points Inserted: 12
+Total time required:0.6604 seconds 
+Average Time Required: 0.055031858336102836 
+
+ 
+File Inserted :Bearing_lock_nuts_lock_nuts_an.xlsx 
+Total Points Inserted: 34
+Total time required:2.2693 seconds 
+Average Time Required: 0.06674477647003882 
+
+ 
+File Inserted :Bearing_lock_nuts_loosening_prevention_nuts_for_bearing.xlsx 
+Total Points Inserted: 30
+Total time required:2.3879 seconds 
+Average Time Required: 0.07959614666566873 
+
+ 
+File Inserted :Bearing_lock_nuts_precision_bearing_lock_nuts_compact.xlsx 
+Total Points Inserted: 24
+Total time required:1.6645 seconds 
+Average Time Required: 0.06935494166585461 
+
+ 
+File Inserted :Bearing_lock_nuts_precision_lock_nuts_standard_high-grade.xlsx 
+Total Points Inserted: 28
+Total time required:2.1517 seconds 
+Average Time Required: 0.07684670357308018 
+
+ 
+File Inserted :Bearing_lock_nuts_ratchet_handle_for_fine_u_nut.xlsx 
+Total Points Inserted: 2
+Total time required:0.1326 seconds 
+Average Time Required: 0.06629524999880232 
+
+ 
+File Inserted :Bearing_lock_nuts_roller_bearing_nut_shaft_nut_an_series.xlsx 
+Total Points Inserted: 46
+Total time required:3.0706 seconds 
+Average Time Required: 0.06675145000032068 
+
+ 
+File Inserted :Bearing_lock_nuts_roller_bearing_retaining_washer_and_clasp_al_clasp_series.xlsx 
+Total Points Inserted: 5
+Total time required:0.4266 seconds 
+Average Time Required: 0.08531994000077248 
+
+ 
+File Inserted :Bearing_lock_nuts_rolling_bearing_retaining_nut_hn_series.xlsx 
+Total Points Inserted: 3
+Total time required:0.2216 seconds 
+Average Time Required: 0.07385823332394163 
+
+ 
+File Inserted :Bearing_lock_nuts_socket_for_fine_u_nut.xlsx 
+Total Points Inserted: 7
+Total time required:0.4720 seconds 
+Average Time Required: 0.06743512857272956 
+
+ 
+File Inserted :Bearing_lock_nuts_super_bearing_nut.xlsx 
+Total Points Inserted: 19
+Total time required:1.3067 seconds 
+Average Time Required: 0.06877132631703525 
+
+ 
+File Inserted :Bearing_lock_nuts_twin_fu_nut.xlsx 
+Total Points Inserted: 9
+Total time required:0.6366 seconds 
+Average Time Required: 0.07073706667223531 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_aw.xlsx 
+Total Points Inserted: 23
+Total time required:1.6176 seconds 
+Average Time Required: 0.07032848695677746 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_for_rolling_bearing_retaining_and_tightening_washer_series_aw.xlsx 
+Total Points Inserted: 1
+Total time required:0.0644 seconds 
+Average Time Required: 0.06439519999548793 
+
+ 
+File Inserted :Bearing_lock_nuts_washer_for_rolling_bearings_retaining_and_tightening_washer_series_awl.xlsx 
+Total Points Inserted: 9
+Total time required:0.7195 seconds 
+Average Time Required: 0.0799492666653047 
+
+ 

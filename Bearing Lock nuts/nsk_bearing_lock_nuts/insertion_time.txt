@@ -1,0 +1,12 @@
+File Inserted :nsk_bulk_data.xlsx 
+Total Points Inserted: 109
+Total time required:14.0276 seconds 
+Average Time Required: 0.12869340366974405 
+
+ 
+File Inserted :nsk_bulk_data.xlsx 
+Total Points Inserted: 109
+Total time required:13.8467 seconds 
+Average Time Required: 0.1270339275230205 
+
+ 

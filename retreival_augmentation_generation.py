@@ -150,7 +150,7 @@ def deep_thinking_retrieval(query_list):
 def chat(prompt: str):
     """
     The main function orchestrating the chat and tool-calling logic.
-    (MODIFIED to explicitly RETURN the final_answer string.)
+
     """
     
     load_dotenv()
@@ -165,7 +165,7 @@ def chat(prompt: str):
         tools=[query_generation, deep_thinking_retrieval]
     )
     
-    chat_session = chat_model.start_chat()
+    chat_session = chat_model.start_chat(enable_automatic_function_calling=False)
 
     initial_prompt = f"""
     Your task is to help the user (a probable customer) find a laptop according to his/her need. Follow these instructions strictly:
@@ -202,7 +202,7 @@ def chat(prompt: str):
     }
     })
     try:
-        response += response.candidates[0].content.parts[0].function_call
+        function_call= response.candidates[0].content.parts[0].function_call
         if function_call is None or function_call.name != "deep_thinking_retrieval":
             return response.text
     except (IndexError, AttributeError, ValueError) as e:
@@ -221,7 +221,7 @@ def chat(prompt: str):
     }})
     
  
-    final_answer = response.candidates[0].content.parts[0].text
+    final_answer = response.text
     
   
     return final_answer
@@ -267,3 +267,4 @@ def rag_ui():
 
 if __name__ == '__main__':
     rag_ui()
+                                                                                                                                                                                                                                                                                                                                            
