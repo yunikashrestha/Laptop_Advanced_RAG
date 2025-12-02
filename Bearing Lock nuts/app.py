@@ -8,7 +8,7 @@ st.title("🔧 Mechanical Part Query Assistant")
 st.markdown("Ask about Bearing Lock Nuts from the Misumi and NSK catalogs.")
 st.divider()
 
-with st.form(key='query_form', clear_on_submit=True):
+with st.form(key='query_form'):
     user_query = st.text_input(
         "Enter your query:",
         placeholder="e.g., How many sub-categories are in NSK?"
